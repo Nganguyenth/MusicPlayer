@@ -1,0 +1,44 @@
+:root{
+    --black-color:#000;
+    --primary-cl:#ffb300;
+    --white-cl:#fff;
+    --main-cl:#F4F5FE;
+    --text-color1: #6d6d6d;
+    --text-color2: #272729;
+    --text-color: #B1B1B2;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+html{
+    font-size: 62.5%;
+    /* Đặt dòng cao mặc định cho chữ */
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    /* Tất cả element sẽ được kế thừa box sizing */
+    box-sizing: border-box;
+}
+/* Chuẩn bị cho responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px ;
+    cursor: pointer;
+}
+.margin10{
+    margin-top: 10px;
+}

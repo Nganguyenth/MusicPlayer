@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./assets/css/base.css">
+    <link rel="Stylesheet" href="./assets/css/responsive.css">
+    <link rel="Stylesheet" href="./assets/css/main.css">
+    <link rel="Stylesheet" href="./assets/css/myScript.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css?fbclid=IwAR3KiX0UeOovH9PGyyaJCVVREdyiN9ewEPqpjRUl4gZIpP590WWTHK6a4eY">
+    <title>My playlist</title>
+</head>
+<body>
+    <div class="app grid">
+        <!-- Sidebar Right  -->
+        <div class="sidebarLeft">
+            <div class="sidebarLeft__logo">
+                <img class="logo__img" src="./assets/img/logo.png" alt="logo"> 
+            </div>
+            <div class="menu sidebarLeft__menu">
+                <div class="menu__item active">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="menu__item-title">Home</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p class="menu__item-title">Trends</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-square-rss"></i>
+                    <p class="menu__item-title">Feed</p>                                    
+                </div>
+            </div>
+            <div class="sidebarLeft__menu">
+                <div class="menu__title"><h5>Discover</h5></div>
+                <div class="menu__item ">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <p class="menu__item-title">New and Notable</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p class="menu__item-title">Release Calendar</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p class="menu__item-title">Events</p>                                    
+                </div>
+            </div>
+            <div class="menu sidebarLeft__menu">
+                <div class="menu__title"><h5>Your collection</h5></div>
+                <div class="menu__item ">
+                    <i class="fa-solid fa-heart"></i>
+                    <p class="menu__item-title">Favorite Songs</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <p class="menu__item-title">Artist</p>                                    
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                    <p class="menu__item-title">Albums</p>                                    
+                </div>
+            </div>
+            <div class="sidebarLeft__account">
+                <div class="account-wrap">
+                    <div class="account__image">
+                        <img src="./assets/img/avatar.jpg" alt="avatar">
+                    </div>
+                    <div class="account__name">
+                        <p>Emily Elizabeth</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+
+        <!-- content  -->
+
+        <div class="content">
+            <div class="content--wrap">
+                <div class="searchbox--wrap">
+                    <div class="search__icon-menu">
+                        <i class="fa-solid fa-bars"></i> 
+                    </div>
+                    <div class="content__searchbox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for artist, songs and,...">
+                    </div>
+                </div>
+                <div class="content__slide">
+                    <div class="slide__title">
+                        <p>What's hot 🔥</p>
+                        <h2>Trending</h3>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-title">
+                            <h3>On top <br> of the world</h3>
+                        </div>             
+                        <div class="slide__img-btn">
+                            <button class="slide__img-play btn">PLAY</button>
+                            <button class="slide__img-fllow btn">FOLLOW</button>
+                        </div>                                
+                    </div>
+                </div> 
+                <div class="content__playlist">
+                    <div class="playlist__title">
+                        <h2>My Playlist</h2>
+                    </div>
+                    <table class="playlist__table-title"><tr>
+                        <th>#</th>
+                        <th>TITLE</th>
+                        <th>ARTIST</th>
+                        <th>ALBUM</th>
+                      </tr></table>
+                    <div class="playlist__table">
+                        <table class="playlist__table-item">
+                        </table>
+                    </div>
+                </div> 
+                <div class="control--wrap player">
+                    <div class="controls">
+                        <div class="controls__btn btn-repeat ">
+                            <i class="fa-solid fa-repeat "></i>
+                        </div>
+                        <div class="controls__btn btn-prev">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="controls__btn btn-toggle-play  ">
+                            <i class="icon-play fa-solid fa-circle-play"></i>
+                            <i class="icon-pause fa-solid fa-circle-pause"></i>
+                        </div>
+                        <div class="controls__btn btn-next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="controls__btn btn-random">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <input type="range" id="progress" class="progress" min="0" max="100" step="1" value="0" >
+                    <audio src="" id="audio"></audio>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="sidebarRight">
+            <div class="sidebarRight__cdthumb">
+                <div class="cdthumb__img">
+                </div>
+                <div class="cdthumb__name">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="shortcuts__list">
+                <div class="slide__title">
+                    <h2>Shortcuts</h3>
+                </div>
+                <div class="shortcuts__list-btn">
+                    <button class="btn">Chill hits ❄</button>
+                    <button class="btn">Hop</button>
+                    <button class="btn">Accoustic</button>
+                    <button class="btn">🎵 Indie Pop</button>
+                    <button class="btn">🎹Piano Blues</button>
+                    <button class="btn">🎷Jazz</button>
+                </div>
+
+            </div>
+            <div class="Artist__list">
+                
+                <div class="slide__title">
+                    <h2>Fav Artist</h3>
+                </div>
+                <div class="Artist__list-item">
+                    <div class="account-wrap margin10">
+                        <div class="account__image">
+                            <img src="./assets/img/avatar3.jpg" alt="avatar">
+                        </div>
+                        <div class="account__name Artist__list-name ">
+                            <p>Ventilation Shaft</p>
+                            <span class="artist__song">9 songs in library</span>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="account-wrap margin10">
+                        <div class="account__image">
+                            <img src="./assets/img/avatar1.jpg" alt="avatar">
+                        </div>
+                        <div class="account__name Artist__list-name ">
+                            <p>Shandy and Belle</p>
+                            <span class="artist__song">4 songs in library</span>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="account-wrap margin10">
+                        <div class="account__image">
+                            <img src="./assets/img/avatar2.jpg" alt="avatar">
+                        </div>
+                        <div class="account__name Artist__list-name ">
+                            <p>Democratic</p>
+                            <span class="artist__song">10 songs in library</span>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src="assets/css/Script.js"></script>
+</body>
+</html>
