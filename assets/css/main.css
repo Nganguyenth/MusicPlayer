@@ -434,7 +434,6 @@
         }
         .app{
             display:flex;
-            flex-direction: column;
         }
         .sidebarright{
             display:flex;
