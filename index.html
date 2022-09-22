@@ -15,12 +15,12 @@
 </head>
 <body>
     <div class="app grid">
-        <!-- Sidebar Right  -->
-        <div class="sidebarLeft">
-            <div class="sidebarLeft__logo">
+        <!-- Sidebar Left  -->
+        <div class="sidebarleft">
+            <div class="sidebarleft__logo">
                 <img class="logo__img" src="./assets/img/logo.png" alt="logo"> 
             </div>
-            <div class="menu sidebarLeft__menu">
+            <div class="menu sidebarleft__menu">
                 <div class="menu__item active">
                     <i class="fa-solid fa-house"></i>
                     <p class="menu__item-title">Home</p>                                    
@@ -34,7 +34,7 @@
                     <p class="menu__item-title">Feed</p>                                    
                 </div>
             </div>
-            <div class="sidebarLeft__menu">
+            <div class="sidebarleft__menu">
                 <div class="menu__title"><h5>Discover</h5></div>
                 <div class="menu__item ">
                     <i class="fa-solid fa-list-ul"></i>
@@ -49,7 +49,7 @@
                     <p class="menu__item-title">Events</p>                                    
                 </div>
             </div>
-            <div class="menu sidebarLeft__menu">
+            <div class="menu sidebarleft__menu">
                 <div class="menu__title"><h5>Your collection</h5></div>
                 <div class="menu__item ">
                     <i class="fa-solid fa-heart"></i>
@@ -64,7 +64,7 @@
                     <p class="menu__item-title">Albums</p>                                    
                 </div>
             </div>
-            <div class="sidebarLeft__account">
+            <div class="sidebarleft__account">
                 <div class="account-wrap">
                     <div class="account__image">
                         <img src="./assets/img/avatar.jpg" alt="avatar">
@@ -86,6 +86,7 @@
                     <div class="search__icon-menu">
                         <i class="fa-solid fa-bars"></i> 
                     </div>
+
                     <div class="content__searchbox">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="Search for artist, songs and,...">
@@ -114,41 +115,20 @@
                         <th>#</th>
                         <th>TITLE</th>
                         <th>ARTIST</th>
-                        <th>ALBUM</th>
+                        <th style="width: 25%;">ALBUM</th>
                       </tr></table>
                     <div class="playlist__table">
                         <table class="playlist__table-item">
                         </table>
                     </div>
                 </div> 
-                <div class="control--wrap player">
-                    <div class="controls">
-                        <div class="controls__btn btn-repeat ">
-                            <i class="fa-solid fa-repeat "></i>
-                        </div>
-                        <div class="controls__btn btn-prev">
-                            <i class="fa-solid fa-backward-step"></i>
-                        </div>
-                        <div class="controls__btn btn-toggle-play  ">
-                            <i class="icon-play fa-solid fa-circle-play"></i>
-                            <i class="icon-pause fa-solid fa-circle-pause"></i>
-                        </div>
-                        <div class="controls__btn btn-next">
-                            <i class="fa-solid fa-forward-step"></i>
-                        </div>
-                        <div class="controls__btn btn-random">
-                            <i class="fa-solid fa-shuffle"></i>
-                        </div>
-                    </div>
-                    <input type="range" id="progress" class="progress" min="0" max="100" step="1" value="0" >
-                    <audio src="" id="audio"></audio>
-                </div>
+                
 
             </div>
             
         </div>
-        <div class="sidebarRight">
-            <div class="sidebarRight__cdthumb">
+        <div class="sidebarright">
+            <div class="sidebarright__cdthumb">
                 <div class="cdthumb__img">
                 </div>
                 <div class="cdthumb__name">
@@ -209,6 +189,28 @@
                 </div>
             </div>
 
+        </div>
+        <div class="control--wrap player">
+            <div class="controls">
+                <div class="controls__btn btn-repeat ">
+                    <i class="fa-solid fa-repeat "></i>
+                </div>
+                <div class="controls__btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="controls__btn btn-toggle-play  ">
+                    <i class="icon-play fa-solid fa-circle-play"></i>
+                    <i class="icon-pause fa-solid fa-circle-pause"></i>
+                </div>
+                <div class="controls__btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="controls__btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <input type="range" id="progress" class="progress" min="0" max="100" step="1" value="0" >
+            <audio src="" id="audio"></audio>
         </div>
     </div>
 <script src="assets/css/Script.js"></script>

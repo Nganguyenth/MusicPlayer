@@ -64,7 +64,8 @@ const app ={
         image:
             "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
             ,album: "Feeling You"
-        }, {
+        },
+        {
             name: "Click Pow Get Down",
             singer: "Raftaar x Fortnite",
             path: "./assets/sounds/song2.mp3",
@@ -116,7 +117,113 @@ const app ={
                 "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
             ,album: "Feeling You"
 
-            }
+            },
+            {
+                name: "Click Pow Get Down",
+                singer: "Raftaar x Fortnite",
+                path: "./assets/sounds/song2.mp3",
+                image: "https://350927.smushcdn.com/1388247/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg?lossy=0&strip=1&webp=1"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Tu Phir Se Aana",
+                singer: "Raftaar x Salim Merchant x Karma",
+                path: "./assets/sounds/song3.mp3",
+                image:
+                    "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Naachne Ka Shaunq",
+                singer: "Raftaar x Brobha V",
+                path:
+                    "./assets/sounds/song4.mp3",
+                image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Mantoiyat",
+                singer: "Raftaar x Nawazuddin Siddiqui",
+                path: "./assets/sounds/song5.mp3",
+                image:
+                    "https://a10.gaanacdn.com/images/song/39/24225939/crop_480x480_1536749130.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Aage Chal",
+                singer: "Raftaar",
+                path: "./assets/sounds/song6.mp3",
+                image:
+                    "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Feeling You",
+                singer: "Raftaar x Harjas",
+                path: "./assets/sounds/song8.mp3",
+                image:
+                    "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
+                ,album: "Feeling You"
+    
+                },
+            {
+            name: "Feeling You",
+            singer: "Raftaar x Harjas",
+            path: "./assets/sounds/song8.mp3",
+            image:
+                "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
+            ,album: "Feeling You"
+
+            },
+            {
+                name: "Click Pow Get Down",
+                singer: "Raftaar x Fortnite",
+                path: "./assets/sounds/song2.mp3",
+                image: "https://350927.smushcdn.com/1388247/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg?lossy=0&strip=1&webp=1"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Tu Phir Se Aana",
+                singer: "Raftaar x Salim Merchant x Karma",
+                path: "./assets/sounds/song3.mp3",
+                image:
+                    "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Naachne Ka Shaunq",
+                singer: "Raftaar x Brobha V",
+                path:
+                    "./assets/sounds/song4.mp3",
+                image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Mantoiyat",
+                singer: "Raftaar x Nawazuddin Siddiqui",
+                path: "./assets/sounds/song5.mp3",
+                image:
+                    "https://a10.gaanacdn.com/images/song/39/24225939/crop_480x480_1536749130.jpg"
+                ,album: "Feeling You"
+    
+                },
+                {
+                name: "Aage Chal",
+                singer: "Raftaar",
+                path: "./assets/sounds/song6.mp3",
+                image:
+                    "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+                ,album: "Feeling You"
+    
+                }
     ],
     render:function(){
         const htmls =this.songs.map((song,index)=>{
