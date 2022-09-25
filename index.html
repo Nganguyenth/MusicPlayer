@@ -14,6 +14,7 @@
     <title>My playlist</title>
 </head>
 <body>
+    
     <div class="app grid">
         <!-- Sidebar Left  -->
         <div class="sidebarleft">
@@ -98,15 +99,73 @@
                         <h2>Trending</h3>
                     </div>
                     <div class="slide__img">
-                        <div class="slide__img-title">
-                            <h3>On top <br> of the world</h3>
-                        </div>             
-                        <div class="slide__img-btn">
-                            <button class="slide__img-play btn">PLAY</button>
-                            <button class="slide__img-fllow btn">FOLLOW</button>
-                        </div>                                
+                        <div class="slide__img-wrap fade">
+                            <img src="./assets/img/slide.jpg" alt="">
+                        </div>
+                        <div class="slide__img-wrap fade">
+                            <img src="./assets/img/slide1.jpg" alt="">
+                        </div>
+                        <div class="slide__img-wrap fade">
+                            <img src="./assets/img/slide2.jpg" alt="">
+                        </div>
+                        <div class="slide__content-wrap">
+                            <div class="slide__img-title">
+                                <h3>On top <br> of the world</h3>
+                            </div>             
+                            <div class="slide__img-btn">
+                                <button class="slide__img-play btn">PLAY</button>
+                                <button class="slide__img-fllow btn">FOLLOW</button>
+                            </div>    
+                        </div>                              
                     </div>
                 </div> 
+                
+                <div class="content__albumhot">
+                    <div class="albumhot__item">
+                        <div class="albumhot__item-wrap">
+                            <img src="https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg" alt="">
+                            <h3>Today's Top Hit</h3>
+                            <p>Sam Smith is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="albumhot__item-iconplay">
+                            <i class="fa-solid fa-circle-play"></i>
+                            
+                        </div>                        
+                    </div>
+                    <div class="albumhot__item">
+                        <div class="albumhot__item-wrap">
+                            <img src="https://350927.smushcdn.com/1388247/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg?lossy=0&strip=1&webp=1" alt="">
+                            <h3>Summer for you</h3>
+                            <p>Sam Smith is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="albumhot__item-iconplay">
+                            <i class="fa-solid fa-circle-play"></i>
+                            
+                        </div>    
+                    </div>
+                    <div class="albumhot__item">
+                        <div class="albumhot__item-wrap">
+                            <img src="https://a10.gaanacdn.com/images/song/39/24225939/crop_480x480_1536749130.jpg" alt="">
+                            <h3>Top hot trend</h3>
+                            <p>Sam Smith is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="albumhot__item-iconplay">
+                            <i class="fa-solid fa-circle-play"></i>
+                            
+                        </div>    
+                    </div>
+                    <div class="albumhot__item">
+                        <div class="albumhot__item-wrap">
+                            <img src="https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg" alt="">
+                            <h3>top 50 in Viet Nam</h3>
+                            <p>Sam Smith is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="albumhot__item-iconplay">
+                            <i class="fa-solid fa-circle-play"></i>
+                            
+                        </div>    
+                    </div>
+                </div>
                 <div class="content__playlist">
                     <div class="playlist__title">
                         <h2>My Playlist</h2>
@@ -122,6 +181,28 @@
                         </table>
                     </div>
                 </div> 
+                <div class="control--wrap player">
+                    <div class="controls">
+                        <div class="controls__btn btn-repeat ">
+                            <i class="fa-solid fa-repeat "></i>
+                        </div>
+                        <div class="controls__btn btn-prev">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="controls__btn btn-toggle-play  ">
+                            <i class="icon-play fa-solid fa-circle-play"></i>
+                            <i class="icon-pause fa-solid fa-circle-pause"></i>
+                        </div>
+                        <div class="controls__btn btn-next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="controls__btn btn-random ">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <input type="range" id="progress" class="progress" min="0" max="100" step="1" value="0" >
+                    <audio src="" id="audio"></audio>
+                </div>
                 
 
             </div>
@@ -190,29 +271,9 @@
             </div>
 
         </div>
-        <div class="control--wrap player">
-            <div class="controls">
-                <div class="controls__btn btn-repeat ">
-                    <i class="fa-solid fa-repeat "></i>
-                </div>
-                <div class="controls__btn btn-prev">
-                    <i class="fa-solid fa-backward-step"></i>
-                </div>
-                <div class="controls__btn btn-toggle-play  ">
-                    <i class="icon-play fa-solid fa-circle-play"></i>
-                    <i class="icon-pause fa-solid fa-circle-pause"></i>
-                </div>
-                <div class="controls__btn btn-next">
-                    <i class="fa-solid fa-forward-step"></i>
-                </div>
-                <div class="controls__btn btn-random">
-                    <i class="fa-solid fa-shuffle"></i>
-                </div>
-            </div>
-            <input type="range" id="progress" class="progress" min="0" max="100" step="1" value="0" >
-            <audio src="" id="audio"></audio>
-        </div>
+        
     </div>
-<script src="assets/css/Script.js"></script>
+<script src="assets/css/Script.js">
+</script>
 </body>
 </html>

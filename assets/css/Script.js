@@ -339,8 +339,15 @@ const app ={
             _this.scrollToView()
         }
 
+        audio.onended=function(){
+            if(_this.isRepeat){
+              audio.play();  
+            }else{
+            nextBtn.click();}
+          }
+
         //Khi random Song
-        
+        console.log(randomBtn)
         randomBtn.onclick = function(){
             _this.isRandom=!_this.isRandom
                 randomBtn.classList.toggle('active',_this.isRandom)
@@ -359,8 +366,7 @@ const app ={
         repeatBtn.onclick = function(){
             _this.isRepeat =!_this.isRepeat;
             repeatBtn.classList.toggle('active',_this.isRepeat)
-
-
+            
         }
         //Khi click bài hát
         console.log(playlist)
@@ -395,3 +401,20 @@ const app ={
     },
 }
 app.start();
+let slideIndex = 0
+function slide(){
+    let slider = document.getElementsByClassName("slide__img-wrap")
+    console.log(slideIndex)
+    for(let i=0; i<slider.length;i++){
+        console.log(slider.length)
+        slider[i].style.display = "none"; 
+    }
+    slideIndex++
+    if(slideIndex > slider.length){
+        slideIndex = 1
+    }
+    console.log(slider[slideIndex])
+    slider[slideIndex-1].style.display = "flex"
+    setTimeout(slide, 2500);
+}
+slide()
